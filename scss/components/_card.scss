@@ -64,6 +64,8 @@ $spacing-1300: 104;
             flex-direction: column;
 
             &-label {
+                display: flex;
+                justify-content: space-between;
                 margin-bottom: u.rem($spacing-100);
                 @include u.text-preset-3;
             }
