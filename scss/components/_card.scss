@@ -80,7 +80,6 @@ $spacing-1300: 104;
                 height: u.rem(56);
                 background-color: var(--color-blue-800);
                 border-radius: u.rem(8);
-                padding: u.rem($spacing-200) u.rem($spacing-600);
                 color: var(--color-white);
 
                 @include u.text-preset-2;
