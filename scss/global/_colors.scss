@@ -1,0 +1,12 @@
+:root {
+    --color-white: hsl(0, 100%, 100%);
+    --color-grey: hsl(0, 0%, 58%);
+    --color-blue-700: hsl(235, 18%, 26%);
+    --color-blue-800: hsl(234, 29%, 20%);
+    --color-red: hsl(4, 100%, 67%);
+    --color-gradient: linear-gradient(
+        to right,
+        hsl(12, 100%, 61%),
+        hsl(346, 100%, 66%)
+    );
+}

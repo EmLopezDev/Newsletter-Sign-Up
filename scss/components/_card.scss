@@ -1,0 +1,90 @@
+@use "../utils/" as u;
+
+$spacing-100: 8;
+$spacing-200: 16;
+$spacing-300: 24;
+$spacing-400: 32;
+$spacing-500: 40;
+$spacing-600: 48;
+$spacing-800: 64;
+$spacing-900: 72;
+$spacing-1300: 104;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(40);
+    background-color: var(--color-white);
+    height: 100vh;
+    width: 100%;
+    color: var(--color-blue-800);
+    overflow: auto;
+
+    &__image--container {
+        width: 100%;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__info {
+        padding: 0 u.rem($spacing-300) u.rem($spacing-600);
+
+        &--header {
+            margin-bottom: u.rem($spacing-300);
+
+            @include u.text-preset-1-mobile;
+        }
+
+        &--details {
+            margin-bottom: u.rem($spacing-300);
+
+            @include u.text-preset-2;
+        }
+
+        &--list {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            gap: u.rem($spacing-100);
+            margin-bottom: u.rem($spacing-500);
+            list-style-image: url("/assets/images/icon-list.svg");
+            margin-left: u.rem($spacing-300);
+
+            @include u.text-preset-2;
+
+            & li {
+                padding-left: u.rem($spacing-200);
+            }
+        }
+
+        &--form {
+            display: flex;
+            flex-direction: column;
+
+            &-label {
+                margin-bottom: u.rem($spacing-100);
+                @include u.text-preset-3;
+            }
+
+            &-input {
+                height: u.rem(56);
+                padding: u.rem($spacing-200) u.rem($spacing-300);
+                margin-bottom: u.rem($spacing-300);
+
+                @include u.text-preset-2;
+            }
+
+            &-button {
+                height: u.rem(56);
+                background-color: var(--color-blue-800);
+                border-radius: u.rem(8);
+                padding: u.rem($spacing-200) u.rem($spacing-600);
+                color: var(--color-white);
+
+                @include u.text-preset-2;
+            }
+        }
+    }
+}

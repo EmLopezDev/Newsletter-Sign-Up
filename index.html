@@ -10,55 +10,56 @@
             sizes="32x32"
             href="./assets/images/favicon-32x32.png"
         />
-
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./dist/style.css" />
         <title>Newsletter sign-up form with success message</title>
     </head>
     <body>
-        <main class="card">
-            <article class="card__default">
-                <figure class="card__image--container">
-                    <img
-                        class="card__image"
-                        src="./assets/images/illustration-sign-up-mobile.svg"
-                        alt=""
-                    />
-                </figure>
-                <section class="card__info">
-                    <h1 class="card__info--header">Stay updated!</h1>
-                    <p class="card__info--details">
-                        Join 60,000+ product managers receiving monthly updates
-                        on:
-                    </p>
-                    <ul class="card__info--list">
-                        <li>Product discovery and building what matters</li>
-                        <li>Measuring to ensure updates are a success</li>
-                        <li>And much more!</li>
-                    </ul>
+        <article id="card__default" class="card">
+            <figure class="card__image--container">
+                <img
+                    class="card__image"
+                    src="./assets/images/illustration-sign-up-mobile.svg"
+                    alt=""
+                />
+            </figure>
+            <section class="card__info">
+                <h1 class="card__info--header">Stay updated!</h1>
+                <p class="card__info--details">
+                    Join 60,000+ product managers receiving monthly updates on:
+                </p>
+                <ul class="card__info--list">
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
 
-                    <form novalidate class="card__info--form">
-                        <label class="card__info--form-label" for="email">
-                            Email address
-                            <span
-                                id="error"
-                                class="card__info--form-error"
-                            ></span>
-                        </label>
-                        <input
-                            class="card__info--form-input"
-                            required
-                            id="email"
-                            name="email"
-                            type="email"
-                            placeholder=" email@company.com"
-                        />
-                        <button class="card__info--form-button" type="submit">
-                            Subscribe to monthly newsletter
-                        </button>
-                    </form>
-                </section>
-            </article>
-            <!-- Success View -->
-            <!-- <article class="card__success">
+                <form novalidate class="card__info--form">
+                    <label class="card__info--form-label" for="email">
+                        Email address
+                        <span id="error" class="card__info--form-error"></span>
+                    </label>
+                    <input
+                        class="card__info--form-input"
+                        required
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder=" email@company.com"
+                    />
+                    <button class="card__info--form-button" type="submit">
+                        Subscribe to monthly newsletter
+                    </button>
+                </form>
+            </section>
+        </article>
+        <!-- Success View -->
+        <!-- <article id="card__success" class="card">
                 <h1 class="card__success--header">Thanks for subscribing!</h1>
                 <p class="card__success--details">
                     A confirmation email has been sent to ash@loremcompany.com.
@@ -67,6 +68,5 @@
                 </p>
                 <button class="card__success--button">Dismiss message</button>
             </article> -->
-        </main>
     </body>
 </html>

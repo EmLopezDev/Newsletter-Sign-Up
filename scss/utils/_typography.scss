@@ -1,0 +1,48 @@
+@use "functions" as f;
+
+:root {
+    --font-family: "Roboto";
+}
+
+$font-size-xlarge: 56;
+$font-size-large: 40;
+$font-size-medium: 16;
+$font-size-small: 12;
+$font-weight-bold: 700;
+$line-height-medium: 150%;
+$line-height-small: 100%;
+$letter-spacing: 0;
+
+@mixin text-preset-1 {
+    font-size: f.rem($font-size-large);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-small;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin text-preset-1-mobile {
+    font-size: f.rem($font-size-large);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-small;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin text-preset-2 {
+    font-size: f.rem($font-size-medium);
+    line-height: $line-height-medium;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin text-preset-2-bold {
+    font-size: f.rem($font-size-medium);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-medium;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin text-preset-3 {
+    font-size: f.rem($font-size-small);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-medium;
+    letter-spacing: $letter-spacing;
+}
