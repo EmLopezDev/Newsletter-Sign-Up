@@ -49,7 +49,7 @@ $spacing-1300: 104;
             align-content: center;
             gap: u.rem($spacing-100);
             margin-bottom: u.rem($spacing-500);
-            list-style-image: url("/assets/images/icon-list.svg");
+            list-style-image: url("../assets/images/icon-list.svg");
             margin-left: u.rem($spacing-300);
 
             @include u.text-preset-2;
