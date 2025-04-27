@@ -18,7 +18,7 @@ body {
     background-color: var(--color-white);
 
     @include u.breakpoint(small) {
-        padding: u.rem(40) 0;
+        padding: u.rem(40);
         background-color: var(--color-blue-700);
     }
 }

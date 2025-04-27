@@ -18,7 +18,6 @@ $spacing-1300: 104;
     height: 100%;
     width: 100%;
     color: var(--color-blue-800);
-    overflow: hidden;
 
     @include u.breakpoint(small) {
         max-width: u.rem(608);
