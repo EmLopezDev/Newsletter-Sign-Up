@@ -14,7 +14,7 @@ $line-height-small: 100%;
 $letter-spacing: 0;
 
 @mixin text-preset-1 {
-    font-size: f.rem($font-size-large);
+    font-size: f.rem($font-size-xlarge);
     font-weight: $font-weight-bold;
     line-height: $line-height-small;
     letter-spacing: $letter-spacing;

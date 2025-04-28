@@ -20,7 +20,7 @@
         <title>Newsletter sign-up form with success message</title>
     </head>
     <body>
-        <article id="card__default" class="card">
+        <article id="card__default" class="card hidden">
             <img
                 class="card__image--mobile"
                 src="./assets/images/illustration-sign-up-mobile.svg"
@@ -61,15 +61,19 @@
                 </form>
             </section>
         </article>
-        <!-- Success View -->
-        <!-- <article id="card__success" class="card">
-                <h1 class="card__success--header">Thanks for subscribing!</h1>
-                <p class="card__success--details">
-                    A confirmation email has been sent to ash@loremcompany.com.
-                    Please open it and click the button inside to confirm your
-                    subscription.
-                </p>
-                <button class="card__success--button">Dismiss message</button>
-            </article> -->
+        <article id="card__success" class="card__success">
+            <img
+                class="card__success--image"
+                src="./assets/images/icon-success.svg"
+                alt=""
+            />
+            <h1 class="card__success--header">Thanks for subscribing!</h1>
+            <p class="card__success--details">
+                A confirmation email has been sent to ash@loremcompany.com.
+                Please open it and click the button inside to confirm your
+                subscription.
+            </p>
+            <button class="card__success--button">Dismiss message</button>
+        </article>
     </body>
 </html>
