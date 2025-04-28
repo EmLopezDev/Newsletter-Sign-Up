@@ -21,7 +21,7 @@
         <title>Newsletter sign-up form with success message</title>
     </head>
     <body>
-        <article id="card__default" class="card">
+        <article id="card-default" class="card">
             <img
                 class="card__image--mobile"
                 src="./assets/images/illustration-sign-up-mobile.svg"
@@ -60,13 +60,14 @@
                         id="subscribe"
                         class="card__info--form-button"
                         type="submit"
+                        disabled
                     >
                         Subscribe to monthly newsletter
                     </button>
                 </form>
             </section>
         </article>
-        <article id="card__success" class="card__success hidden">
+        <article id="card-success" class="card__success hidden">
             <img
                 class="card__success--image"
                 src="./assets/images/icon-success.svg"
@@ -74,9 +75,9 @@
             />
             <h1 class="card__success--header">Thanks for subscribing!</h1>
             <p class="card__success--details">
-                A confirmation email has been sent to ash@loremcompany.com.
-                Please open it and click the button inside to confirm your
-                subscription.
+                A confirmation email has been sent to
+                <span id="success-email"></span>. Please open it and click the
+                button inside to confirm your subscription.
             </p>
             <button id="dismiss" class="card__success--button">
                 Dismiss message

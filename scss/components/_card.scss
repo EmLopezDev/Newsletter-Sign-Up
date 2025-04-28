@@ -121,12 +121,23 @@ $spacing-1300: 104;
                 @include u.text-preset-3;
             }
 
+            &-error {
+                color: var(--color-red);
+            }
+
             &-input {
                 height: u.rem(56);
                 padding: u.rem($spacing-200) u.rem($spacing-300);
                 margin-bottom: u.rem($spacing-300);
                 border: 1px solid rgba(128, 128, 128, 0.8);
                 border-radius: u.rem(8);
+
+                &.error:focus {
+                    outline: none;
+                    border: 1px solid var(--color-red);
+                    background-color: var(--color-red-bg);
+                    color: var(--color-red);
+                }
 
                 @include u.text-preset-2;
 
@@ -152,6 +163,10 @@ $spacing-1300: 104;
                 &:disabled {
                     background-color: var(--color-grey-disabled);
                     cursor: not-allowed;
+                }
+
+                &.active {
+                    background: var(--color-gradient);
                 }
             }
         }
