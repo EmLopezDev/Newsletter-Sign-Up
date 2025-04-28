@@ -21,68 +21,74 @@
         <title>Newsletter sign-up form with success message</title>
     </head>
     <body>
-        <article id="card-default" class="card">
-            <img
-                class="card__image--mobile"
-                src="./assets/images/illustration-sign-up-mobile.svg"
-                alt=""
-            />
-            <img
-                class="card__image--desktop"
-                src="./assets/images/illustration-sign-up-desktop.svg"
-                alt=""
-            />
-            <section class="card__info">
-                <h1 class="card__info--header">Stay updated!</h1>
-                <p class="card__info--details">
-                    Join 60,000+ product managers receiving monthly updates on:
-                </p>
-                <ul class="card__info--list">
-                    <li>Product discovery and building what matters</li>
-                    <li>Measuring to ensure updates are a success</li>
-                    <li>And much more!</li>
-                </ul>
+        <main>
+            <article id="card-default" class="card">
+                <img
+                    class="card__image--mobile"
+                    src="./assets/images/illustration-sign-up-mobile.svg"
+                    alt=""
+                />
+                <img
+                    class="card__image--desktop"
+                    src="./assets/images/illustration-sign-up-desktop.svg"
+                    alt=""
+                />
+                <section class="card__info">
+                    <h1 class="card__info--header">Stay updated!</h1>
+                    <p class="card__info--details">
+                        Join 60,000+ product managers receiving monthly updates
+                        on:
+                    </p>
+                    <ul class="card__info--list">
+                        <li>Product discovery and building what matters</li>
+                        <li>Measuring to ensure updates are a success</li>
+                        <li>And much more!</li>
+                    </ul>
 
-                <form novalidate class="card__info--form">
-                    <label class="card__info--form-label" for="email">
-                        Email address
-                        <span id="error" class="card__info--form-error"></span>
-                    </label>
-                    <input
-                        class="card__info--form-input"
-                        required
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="email@company.com"
-                        autofocus
-                    />
-                    <button
-                        id="subscribe"
-                        class="card__info--form-button"
-                        type="submit"
-                        disabled
-                    >
-                        Subscribe to monthly newsletter
-                    </button>
-                </form>
-            </section>
-        </article>
-        <article id="card-success" class="card__success hidden">
-            <img
-                class="card__success--image"
-                src="./assets/images/icon-success.svg"
-                alt=""
-            />
-            <h1 class="card__success--header">Thanks for subscribing!</h1>
-            <p class="card__success--details">
-                A confirmation email has been sent to
-                <span id="success-email"></span>. Please open it and click the
-                button inside to confirm your subscription.
-            </p>
-            <button id="dismiss" class="card__success--button">
-                Dismiss message
-            </button>
-        </article>
+                    <form novalidate class="card__info--form">
+                        <label class="card__info--form-label" for="email">
+                            Email address
+                            <span
+                                id="error"
+                                class="card__info--form-error"
+                            ></span>
+                        </label>
+                        <input
+                            class="card__info--form-input"
+                            required
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="email@company.com"
+                            autofocus
+                        />
+                        <button
+                            id="subscribe"
+                            class="card__info--form-button"
+                            type="submit"
+                            disabled
+                        >
+                            Subscribe to monthly newsletter
+                        </button>
+                    </form>
+                </section>
+            </article>
+            <article id="card-success" class="card__success hidden">
+                <img
+                    class="card__success--image"
+                    src="./assets/images/icon-success.svg"
+                    alt=""
+                />
+                <h1 class="card__success--header">Thanks for subscribing!</h1>
+                <p class="card__success--details">
+                    A confirmation email has been sent to
+                    <span id="success-email"></span>. Please open it and click
+                    the button inside to confirm your subscription.
+                </p>
+                <button id="dismiss" class="card__success--button">
+                    Dismiss message
+                </button>
+            </article>
+        </main>
     </body>
 </html>
