@@ -142,11 +142,17 @@ $spacing-1300: 104;
                 height: u.rem(56);
                 width: 100%;
                 background-color: var(--color-blue-800);
+                border: none;
                 border-radius: u.rem(8);
                 color: var(--color-white);
                 text-align: center;
 
                 @include u.text-preset-2;
+
+                &:disabled {
+                    background-color: var(--color-grey-disabled);
+                    cursor: not-allowed;
+                }
             }
         }
     }

@@ -17,10 +17,11 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./dist/style.css" />
+        <script src="./main.js" defer></script>
         <title>Newsletter sign-up form with success message</title>
     </head>
     <body>
-        <article id="card__default" class="card hidden">
+        <article id="card__default" class="card">
             <img
                 class="card__image--mobile"
                 src="./assets/images/illustration-sign-up-mobile.svg"
@@ -53,15 +54,19 @@
                         id="email"
                         name="email"
                         type="email"
-                        placeholder=" email@company.com"
+                        placeholder="email@company.com"
                     />
-                    <button class="card__info--form-button" type="submit">
+                    <button
+                        id="subscribe"
+                        class="card__info--form-button"
+                        type="submit"
+                    >
                         Subscribe to monthly newsletter
                     </button>
                 </form>
             </section>
         </article>
-        <article id="card__success" class="card__success">
+        <article id="card__success" class="card__success hidden">
             <img
                 class="card__success--image"
                 src="./assets/images/icon-success.svg"
@@ -73,7 +78,9 @@
                 Please open it and click the button inside to confirm your
                 subscription.
             </p>
-            <button class="card__success--button">Dismiss message</button>
+            <button id="dismiss" class="card__success--button">
+                Dismiss message
+            </button>
         </article>
     </body>
 </html>
