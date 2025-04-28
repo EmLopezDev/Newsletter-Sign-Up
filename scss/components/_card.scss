@@ -73,6 +73,7 @@ $spacing-1300: 104;
 
             @include u.breakpoint(medium) {
                 margin-bottom: u.rem($spacing-400);
+                @include u.text-preset-1;
             }
         }
 
@@ -212,6 +213,8 @@ $spacing-1300: 104;
 
         @include u.breakpoint(small) {
             margin-bottom: 0;
+
+            @include u.text-preset-1;
         }
     }
 
