@@ -92,8 +92,8 @@ $spacing-1300: 104;
             align-content: center;
             gap: u.rem($spacing-100);
             margin-bottom: u.rem($spacing-500);
-            list-style-image: url("../assets/images/icon-list.svg");
-            margin-left: u.rem($spacing-300);
+            // list-style-image: url("../assets/images/icon-list.svg");
+            // margin-left: u.rem($spacing-300);
 
             @include u.text-preset-2;
 
@@ -105,8 +105,15 @@ $spacing-1300: 104;
                 margin-bottom: u.rem($spacing-400);
             }
 
+            & li::before {
+                content: url("../assets/images/icon-list.svg");
+                width: u.rem(21);
+                height: u.rem(21);
+            }
             & li {
-                padding-left: u.rem($spacing-200);
+                display: flex;
+                align-items: center;
+                gap: u.rem($spacing-200);
             }
         }
 
